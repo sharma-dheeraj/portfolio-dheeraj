@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 :root {
-  --primary-color: #f87171;
+  --primary-color: #111827;
   --dark-grey: #6b7280;
   --background-color: #e5e7eb;
-  --black: #111827;
+  --secondary-color: #f87171;
 }
 
 body {
@@ -33,13 +33,13 @@ hr {
   color: white;
 }
 .link-primary {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
 }
 .link-secondary {
   background-color: white;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 /* lists */
@@ -56,25 +56,29 @@ hr {
   background-color: var(--primary-color);
   color: white;
   padding: 1rem 0rem;
-  border-bottom-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 }
 .brandName {
-  padding: 0.5rem 0.5rem;
+  color: var(--secondary-color);
+  padding: 1rem 0.5rem;
   font-weight: bolder;
-  font-size: 1.3rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 .navigation .list-non-bullet {
-  text-align: right;
+  text-align: center;
+  padding-inline-start: 0%;
 }
 .navigation .link-active {
   font-weight: bold;
-  text-decoration: underline;
+  font-size: larger;
+  text-decoration: none;
 }
 
 /* header */
 .hero {
-  padding: 2rem 2rem;
+  padding: 4rem 2rem;
 }
 .hero .hero-img {
   margin: auto;
@@ -87,7 +91,7 @@ hr {
   color: var(--black);
 }
 .hero .hero-heading-inverted {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* section */
@@ -110,8 +114,10 @@ hr {
 .footer {
   background-color: var(--primary-color);
   color: var(--background-color);
-  padding: 3rem 0rem;
+  padding: 1rem 0rem;
   text-align: center;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 .footer .social-links {
   padding-inline-start: 0px;
